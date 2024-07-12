@@ -1,0 +1,2856 @@
+    *{
+        flex-wrap: wrap;
+        margin: 0px;
+        padding: 0px;
+    }
+    .tophead{
+        background-color: rgb(222, 249, 255);
+    }
+    .top{
+        background-color: #76e5d8;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        height: 50px;
+    }
+    .imgin1{
+        width: 100px;
+        margin-top: 9px;
+        margin-left: 18px;
+    }
+    .signin{
+        size: 10px;
+        float: right;
+        font-size: 15px;
+        margin-top: -25px;
+        margin-right: 24px;
+        width: 60px;
+        height: 20px;
+        border: 2px solid blue;
+        border-radius: 8px;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+        font-family: sans-serif;
+    }
+    .signin:hover{
+        background-color: #4a89bd;
+        transition: background-color 0.7s;
+    }
+    .imgin2{
+        width: 25px;
+        opacity: 0.9;
+        float: right;
+        margin-top: -25px;
+        margin-right: 132px;
+    }
+    .navbr1{
+        display: flex;
+        justify-content: center;
+    }
+    .nav2{
+        display: flex;
+        margin-top: 50px;
+    }
+
+    .first3 a{
+        text-decoration: none;
+        color: white;
+        display: flex;
+        width: 100px;
+        height: 25px;
+        border-radius: 26px;
+        justify-content: center;
+        align-content: center;
+    }
+    .first3 a:hover{
+        background-color: rgb(222, 249, 255);
+        color: rgb(0, 0, 0);
+        box-shadow: none;
+        font-weight: bold;
+    }
+
+    li{
+        list-style: none;
+        cursor: pointer;
+    }
+    #first{
+        z-index: 8;
+        display: flex;
+        background-color: rgb(0, 195, 255);
+        color: black;
+        border: solid 2px rgb(0, 195, 255);
+        border-radius: 26px;
+        font-size: 14px;
+        width: 100px;
+        height: 25px;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    #second{
+        z-index: 6;
+        display: flex;
+        background-color: rgb(17 176 225);
+        border: solid 2px rgb(17 176 225);
+        border-radius: 26px;
+        font-size: 14px;
+        width: 100px;
+        height: 25px;
+        justify-content: center;
+        align-items: center;
+        margin-left: -22px;
+        padding-left: 12px;
+    }
+    #third{
+        z-index: 4;
+        display: flex;
+        background-color: rgb(5, 152, 195);
+        border: solid 2px rgb(5, 152, 195);
+        border-radius: 26px;
+        font-size: 14px;
+        width: 80px;
+        height: 25px;
+        justify-content: center;
+        align-items: center;
+        margin-left: -22px;
+        padding-left: 18px;
+    }
+    #four{
+        z-index: 2;
+        display: flex;
+        background-color: rgb(0, 124, 152);
+        border: solid 2px rgb(0, 124, 152);
+        border-radius: 26px;
+        font-size: 14px;
+        width: 110px;
+        height: 25px;
+        justify-content: center;
+        align-items: center;
+        margin-left: -22px;
+        padding-left: 15px;
+    }
+    #f1{
+        display: none;
+        z-index: 7;
+    }
+    #s2{
+        z-index: 5;
+        display: none;
+    }
+    #t3{
+        z-index: 3;
+        display: none;
+    }
+    #t4{
+        z-index: 1;
+        display: none;
+    }
+    .extar{
+        background-color: rgb(222, 249, 255);
+        border: solid 2px white;
+        border-radius: 26px;
+        width: 100px;
+        height: 25px;
+        margin-left: -101px;
+    }
+    #first:hover{
+        background-color: rgb(222, 249, 255);
+        box-shadow: none;
+        font-weight: bold
+    }
+    #second:hover{
+        background-color: rgb(222, 249, 255);
+        box-shadow: none;
+        font-weight: bold
+    }
+    #third:hover{
+        background-color: rgb(222, 249, 255);
+        box-shadow: none;
+        font-weight: bold
+    }
+    #four:hover{
+        background-color: rgb(222, 249, 255);
+        box-shadow: none;
+        font-weight: bold
+    }
+    .searchbody{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    #search{
+        width: 580px;
+        height: 31px;
+        border-radius: 20px;
+        padding-left: 10px;
+        margin-right: -5px;
+        border: 2px solid rgb(0, 189, 244);
+    }
+    .search_submit{
+        cursor: pointer;
+        border-radius: 30px;
+        background-color: rgb(0, 124, 152);
+        width: 73px;
+        height: 25px;
+        color: white;
+        margin-left: -78px;
+    }
+    .search_submit:hover{
+        color: black;
+        border: 2px solid rgb(0, 162, 255);
+    }
+    
+    .flow1 {
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        margin: auto;
+        margin-top: 40px;
+        width: 45.1%;
+        height: 300px;
+        box-shadow: 0px 12px 25px rgb(141, 150, 156);
+    }
+    .img1 {
+        width: 20%;
+        height: 300px;
+        float: left;
+    }
+    .fig{
+        width: 500%;
+        display: flex;
+        position: relative;
+        margin: 0px;
+        animation: animate 14s ease-in-out infinite;
+    }
+
+    @keyframes animate {
+        10% {
+            left: 0px;
+        }
+        20% {
+            left: 0%;
+        }
+        30% {
+            left: -100%;
+        }
+        40% {
+            left: -100%;
+        }
+        50% {
+            left: -200%;
+        }
+        60% {
+            left: -200%;
+        }
+        70% {
+            left: -300%;
+        }
+        80% {
+            left: -300%;
+        }
+        90% {
+            left: -400%;
+        }
+        100% {
+            left: -400%;
+        }
+    }
+
+    .img2{
+        width: 20%;
+        height: 240px;
+        float: left;
+    }
+    .flow2{
+        overflow: hidden;
+        margin: auto;
+        margin-top: -270px;
+        margin-left: 0px;
+        width: 45.1%;
+        height: 240px;
+        box-shadow: 0px 12px 25px rgb(141, 150, 156);
+    }
+
+    .img3{
+        width: 20%;
+        height: 240px;
+        float: left;
+    }
+    .flow3{
+        overflow: hidden;
+        margin: auto;
+        margin-top: -237px;
+        margin-right: 0px;
+        width: 45%;
+        height: 240px;
+        box-shadow: 0px 12px 25px rgb(141, 150, 156);
+    }
+
+    .service{
+        margin-top: 70px;
+    }
+    .service_name{
+        display: flex;
+        justify-content: center;
+        color:  #346792;
+        font-size: 35px;
+    }
+    .service_name_in1{
+        display: flex;
+        justify-content: center;
+        font-family: cursive;
+        color: #60c5b5;
+        font-weight: 500;
+    }
+    .nav_haed_part2{
+        display: flex;
+        justify-content: center;
+        padding: 50px 0px;
+    }
+    .nav_start_part2{
+        display: flex;
+        text-align: center;
+        align-content: center;
+        width: 180px;
+        height: 50px;
+        font-size: 14px;
+        margin-left: -44px;
+        padding-left: 18px;
+        background-color: #60c5b5;
+        border-radius: 26px;
+        color: white;
+        box-shadow: 1px 0px 8px black;
+    }
+    #nav_start1_part2{
+        background-color: rgb(0, 195, 255);
+        border: 2px solid rgb(0, 195, 255);
+        z-index: 8;
+    }
+    #nav_start2_part2{
+        background-color: rgb(17 176 225);
+        border: 2px solid rgb(17, 176, 255);
+        z-index: 6;
+    }
+    #nav_start3_part2{
+        background-color: rgb(5, 152, 195);
+        border: 2px solid rgb(5, 152, 195);
+        z-index: 4;
+    }
+    #nav_start4_part2{
+        background-color: rgb(0, 124, 152);
+        border: 2px solid rgb(0, 124, 152);
+        z-index: 2;
+    }
+    #nav_in_back1_part2{
+        display: none;
+        z-index: 7;
+    }
+    #nav_in_back2_part2{
+        display: none;
+        z-index: 5;
+    }
+    #nav_in_back3_part2{
+        display: none;
+        z-index: 3;
+    }
+    #nav_in_back4_part2{
+        display: none;
+        z-index: 1;
+    }
+    .nav_in_back_part2{
+        background-color: rgb(222, 249, 255);
+        border: solid 2px white;
+        border-radius: 26px;
+        width: 180px;
+        height: 50px;
+        margin-left: -101px;
+    }
+    #nav_in1_part2{
+        padding: 0px 29px;
+    }
+    #nav_in3_part2{
+        padding: 0px 50px;
+    }
+    #nav_in3_part2{
+        padding: 0px 50px;
+    }
+    #nav_in4_part2{
+        padding: 0px 58px;
+    }
+    #nav_in4_part21{
+        padding-left: 55px;
+    }
+    #nav_start1_part2:hover{
+        background-color: rgb(222, 249, 255);
+        color: black;
+        box-shadow: none;
+        font-weight: bold
+    }
+    #nav_start2_part2:hover{
+        background-color: rgb(222, 249, 255);
+        color: black;
+        box-shadow: none;
+        font-weight: bold
+    }
+    #nav_start3_part2:hover{
+        background-color: rgb(222, 249, 255);
+        color: black;
+        box-shadow: none;
+        font-weight: bold
+    }
+    #nav_start4_part2:hover{
+        background-color: rgb(222, 249, 255);
+        color: black;
+        box-shadow: none;
+        font-weight: bold
+    }
+    .doctor_img1{
+        display: block;
+        margin: auto;
+        transition: 400ms;
+    }
+    .doctor_img1:hover{
+        transform: scale(1.04);  
+    } 
+    .nav_start1_part2_option1{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .option1{
+        color: rgb(52, 103, 146);
+        font-family: math;
+        font-weight: 400;
+        font-size: 40px;
+    }
+    .par1{
+        margin-top: 20px;
+        padding: 0px 376px;
+        text-align: center;
+        font-family: sans-serif;
+        font-weight: 15px;
+    }
+    .par2{
+        margin-top: 10px;
+        padding: 0px 365px;
+        text-align: center;
+        font-family: sans-serif;
+        font-weight: 15px;
+    }
+    .nav_start1_part2_submit{
+        margin-top: 20px;
+        width: 190px;
+        height: 42px;
+        color: white;
+        background: linear-gradient(180deg, rgb(0, 162, 255), rgb(101, 101, 101));
+        border-radius: 20px;
+        border: none;
+        font-family: math;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .nav_start1_part2_submit:hover{
+        background: none;
+        border: 2px solid rgb(0, 162, 255);
+        color: black;
+        transition: color 0.6s;
+        font-weight: 800;
+    }
+    .health_related_issues{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    .health_related_issues_card1{
+        width: 250px;
+        height: 240px;
+        border-radius: 48px;
+        border: none;
+        background-color: rgb(0, 222, 255);
+        margin-right: 50px;
+        box-shadow: 5px 5px 18px black;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+    .health_related_issues_card1:hover{
+        box-shadow: none;
+        transition: box-shadow 1s;
+    }
+    .health_related_issues_card2{
+        width: 250px;
+        height: 240px;
+        border-radius: 48px;
+        border: none;
+        background-color: rgb(4, 180, 230);
+        margin-right: 50px;
+        margin-left: 50px;
+        box-shadow: 5px 5px 18px black;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+    .health_related_issues_card2:hover{
+        box-shadow: none;
+        transition: box-shadow 1s;
+    }
+    .health_related_issues_card3{
+        width: 250px;
+        height: 240px;
+        border-radius: 48px;
+        border: none;
+        background-color: rgb(2, 131, 170);
+        margin-left: 50px;
+        box-shadow: 5px 5px 18px black;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+    .health_related_issues_card3:hover{
+        box-shadow: none;
+        transition: box-shadow 1s;
+    }
+    .health_related_issues_img{
+        display: block;
+        margin: auto;
+        margin-top: 5px;
+    }
+    .health_related_issues_card1_heading1{
+        color: white;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 22px;
+        
+    }
+    .health_related_issues_card1_heading2{
+        color: white;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 22px;
+        
+    }
+    .health_related_issues_card1_heading3{
+        color: white;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 22px;
+        
+    }
+    .health_related_issues_card1_pr1{
+        text-align: center;
+        width: 85%;
+        margin: auto;
+        font-family: math;
+    }
+    .health_related_issues_card1_pr2{
+        text-align: center;
+        font-family: math;
+    }
+    .health_related_issues_card1_pr3{
+        text-align: center;
+        width: 75%;
+        margin: auto;
+        font-family: math;
+    }
+    .contact_us_ishead{
+        text-align: center;
+        margin-top: 30px;
+    }
+    .contact_us_in{
+        color: #346792;
+        font-family: serif;
+    }
+    .contact_us_qout{
+        color: rgb(47, 255, 78);
+        font-family: cursive;
+    }
+    .contact_service_submit_in{
+        width: 300px;
+        height: 40px;
+        background: linear-gradient(180deg, rgb(0, 162, 255), rgb(101, 101, 101));
+        color: white;
+        border: none;
+        border-radius: 20px;
+        margin-left: 9%;
+        cursor: pointer;
+        font-family: serif;
+        font-size: 16px;
+    }
+    .contact_service_submit_in:hover{
+        background: none;
+        border: 2px solid rgb(0, 162, 255);
+        color: black;
+        transition: color 0.7s;
+        font-weight: 800;
+    }
+    .contact_service_img_left{
+        margin-left: 45px;
+    }
+    .contact_service_way{
+        display: flex;
+        float: right;
+        margin-top: -440px;
+        margin-right: 135px;
+    }
+    .contact_service_way_information{
+        margin-top: 48px;
+        margin-left: -50px;
+    }
+    .contact_service_way_information h3{
+        font-size: 23px;
+        color: #346892e8;
+        margin-bottom: 1px;
+    }
+    .contact_service_way_information_pr_head{
+        width: 415px;
+    }
+    .contact_service_way_information_pr_head h5{
+        margin-top: 8px;
+        font-family: sans-serif;
+    }
+
+    .contact_service_way2{
+        display: flex;
+        float: right;
+        margin-top: -320px;
+        margin-right: 135px;
+    }
+    .contact_service_way_information2{
+        margin-top: 48px;
+        margin-left: -50px;
+    }
+    .contact_service_way_information2 h3{
+        font-size: 23px;
+        color: #346892e8;
+        margin-bottom: 1px;
+    }
+    .contact_service_way_information_pr_head2{
+        width: 415px;
+    }
+    .contact_service_way_information_pr_head2 h5{
+        margin-top: 8px;
+        font-family: sans-serif;
+    }
+
+    .contact_service_way3{
+        display: flex;
+        float: right;
+        margin-top: -185px;
+        margin-right: 135px;
+    }
+    .contact_service_way_information3{
+        margin-top: 48px;
+        margin-left: -50px;
+    }
+    .contact_service_way_information3 h3{
+        font-size: 23px;
+        color: #346892e8;
+        margin-bottom: 1px;
+    }
+    .contact_service_way_information_pr_head3{
+        width: 415px;
+    }
+    .contact_service_way_information_pr_head3 h5{
+        margin-top: 8px;
+        font-family: sans-serif;
+    }
+    b{
+        color: rgb(5, 152, 195);
+    }
+
+    .types_of_doctors_and_problems{
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+    }
+    .types_of_doctors_and_problems_1{
+        width: 200px;
+        height: 420px;
+        margin: 0px 20px;
+        background-color: rgb(206, 229, 235);
+        border-top-left-radius: 180px;
+        border-top-right-radius: 180px;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+        padding-top: 15px;
+        cursor: pointer;
+    }
+    .types_of_doctors_and_problems_1:hover{
+        background: #346792;
+        transition: background 0.7s;
+    }
+    .types_of_doctor_img{
+        display: block;
+        margin: auto;
+        border: 5px solid white;
+        border-radius: 100px;
+    }
+    .type_of_doctor_feild_name{
+        margin: 20px 0px;
+        font-weight: 500;
+        text-align: center;
+    }
+    .doctor_feild_about{
+        text-align: center;
+        padding: 0px 5px;
+        font-family: sans-serif;
+    }
+    .doctor_feild_about_more{
+        display: block;
+        margin: auto;
+        color: white;
+        margin-top: 50px;
+        width: 110px;
+        height: 30px;
+        border: none;
+        border-radius: 20px;
+        font-family: serif;
+        background: linear-gradient(180deg, rgb(0, 162, 255), rgb(101, 101, 101));
+        cursor: pointer;
+    }
+    .doctor_feild_about_more:hover{
+        background: none;
+        background-color: rgb(190, 186, 186);
+        color: black;
+        font-weight: 600;
+        transition: color 0.6s;
+    }
+    .appoinment_page_heading{
+        display: flex;
+        justify-content: center;
+        margin-top: 90px;
+        margin-bottom: 60px;
+    }
+    .appoinment_details{
+        width: 42%;
+        height: 30px;
+        border: 3px solid rgb(0, 210, 255);
+        border-radius: 20px;
+    }
+    .appoinment{
+        text-align: center;
+    }
+    .appoinment_page_start form{
+        text-align: center;
+    }
+    .head{
+        margin-top: 14px;
+        margin-right: 12px;
+        font-family: sans-serif;
+        font-style: italic;
+        font-weight: 600;
+        font-size: 18px;
+    }
+    .head img{
+        margin-top: 10px;
+        margin-bottom: -16px;
+    }
+    .appoinment_details{
+        padding-left: 10px;
+    }
+    .appoinment_last_terms{
+        display: flex;
+        justify-content: center;
+    }
+    .end{
+        width: 150px;
+        height: 32px;
+        background: linear-gradient(180deg, rgb(0, 162, 255), rgb(101, 101, 101));
+        color: white;
+        font-family: serif;
+        border: none;
+        border-radius: 30px;
+        font-size: 16px;
+        margin-top: 30px;
+    }
+    .end:hover{
+        border: 3px solid rgb(0, 162, 255);
+        background: none;
+        color: black;
+        font-weight: 600;
+        transition: color 0.7s;
+    }
+    #reset{
+        margin-left: 50px;
+        cursor: pointer;
+    }
+    #submit{
+        margin-right: 50px;
+        cursor: pointer;
+    }
+    .care_inquiry_form{
+        margin: auto;
+        width: 550px;
+        height: 130px;
+        background: linear-gradient(180deg, rgb(0, 222, 255), rgba(4, 128, 230, 0.941));
+        border-radius: 80px;
+        padding-top: 10px;
+        margin-top: 70px;
+    }
+    .care_inquiry_form h2{
+        text-align: center;
+        padding: 0px 60px;
+    }
+    .care_inquiry_submit{
+        width: 180px;
+        height: 30px;
+        background: linear-gradient(180deg, rgb(0, 162, 255), rgb(101, 101, 101));
+        color: white;
+        font-family: serif;
+        border-radius: 30px;
+        display: block;
+        margin: auto;
+        margin-top: 30px;
+        cursor: pointer;
+    }
+    .care_inquiry_submit:hover{
+        background: none;
+        background-color: white;
+        color: black;
+        font-weight: 600;
+        border: none;
+        transition: color 0.7s;
+    }
+    .sign_up_for_nwesletter_backimg{
+        margin-top: 190px;
+        height: 380px;
+    }
+    .sign_up_for_nwesletter_backimg::before{
+        width: 100%;
+    }
+    .sign_up_for_nwesletter_infor{
+        margin-top: -320px;
+    }
+    .sign_up_for_nwesletter_infor h2{
+        font-size: 30px;
+        margin-left: 6%;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: white;
+        width: 500px;
+    }
+    .sign_up_for_nwesletter_infor_input{
+        width: 350px;
+        height: 35px;
+        border-radius: 10px;
+        padding-left: 7px;
+        margin-bottom: 15px;
+    }
+    #sign_up_for_nwesletter_infor_email{
+        margin-bottom: 35px;
+    }
+    .sign_up_for_nwesletter_infor_submit_button input{
+        width: 160px;
+        height: 35px;
+        border: none;
+        border-radius: 30px;
+        background: linear-gradient(180deg, rgb(0, 162, 255), rgb(101, 101, 101));
+        cursor: pointer;
+        color: white;
+        font-family: serif;
+        font-size: 18px;
+
+    }
+    .sign_up_for_nwesletter_infor_submit_button input:hover{
+        border: 3px solid rgb(0, 162, 255);
+        background: none;
+        color: black;
+        font-weight: 600;
+        transition: color 0.7s;
+    }
+    .sign_up_for_nwesletter_infor_fill{
+        margin-left: 6%;
+        margin-top: 20px;
+    }
+
+    .search_bar{
+        width: 0px;
+        background: rgb(225, 225, 225,0.1);
+        backdrop-filter: blur(15px);
+    }
+    #bar{
+        border-radius: 12px;
+        float: right;
+        margin-top: -40px;
+        height: 20px;
+        width: 140px;
+    }
+    .search_bar.open{
+        float: right;
+        width: 0px;
+        margin-top: 60px;
+        margin-right: -50px;
+    }
+    .toggleT{
+        display: none;
+        margin-left: auto;
+        margin-right: 14px;
+        height: 0px;
+    }
+    #add{
+        position: relative;
+        z-index: 2;
+        cursor: pointer;
+        width: 26px;
+        float: right;
+        margin-top: -24px;
+        margin-right: 45px;
+    }
+    #wrong{
+        float: right;
+        cursor: pointer;
+        z-index: -1;
+        width: 18px;
+        margin-right: -18px;
+        opacity: 0;
+        margin-top: -21px;
+    }
+    .follow_head{
+        font-family: sans-serif;
+        font-style: italic;
+    }
+    .follow_link{
+        transition: 400ms;
+    }
+    #follow_link1{
+        width: 32px;
+        margin-bottom: 5px;
+    }
+    #follow_link2{
+        width: 42px;
+    }
+    #follow_link3{
+        width: 30px;
+        margin-bottom: 4px;
+    }
+    #follow_link4{
+        width: 70px;
+        margin-left: -13px;
+        margin-bottom: -2px;
+    }
+    .follow_link:hover{
+        transform: scale(1.06);
+    }
+
+    
+    
+    /* <<<-------------------((( media quare )))--------------------->>>*/
+    @media(max-width: 1245px){
+        .contact_service_img_left{
+            margin-left: 0px;
+        }
+        .contact_service_way{
+            margin-right: 115px;
+        }
+        .contact_service_way2{
+            margin-right: 115px;
+        }
+        .contact_service_way3{
+            margin-right: 115px;
+        }
+    }
+    @media(min-width: 990px) and (max-width: 1240px){
+        #search{
+            width: 490px;
+        }
+        .nav_start_part2{
+            width: 160px;
+            height: 45px;
+            font-size: 13px;
+        }
+        #nav_in4_part2{
+            padding-left: 52px;
+        }
+        #nav_in4_part21{
+            padding-left: 49px;
+        }
+        .par1{
+            padding: 0px 280px;
+        }
+        .par2{
+            padding: 0px 280px;
+        }
+        .health_related_issues_card1{
+            margin-right: 20px;
+        }
+        .health_related_issues_card2{
+            margin-right: 20px;
+        }
+        .health_related_issues_card3{
+            margin-right: 20px;
+        }
+    }
+
+    @media(min-width: 1070px) and (max-width: 1240px){
+        .contact_service_way{
+            margin-top: -435px;
+            margin-right: 36px;
+        }
+        .contact_service_way2{
+            margin-top: -315px;
+            margin-right: 36px;
+        }
+        .contact_service_way3{
+            margin-top: -190px;
+            margin-right: 36px;
+        }
+    }
+
+    @media(min-width: 990px) and (max-width: 1070px){
+        .contact_service_imgin_left{
+            width: 450px;
+            height: 390px;
+        }
+        .contact_service_way{
+            margin-top: -388px;
+            margin-right: 40px;
+        }
+        .contact_service_way2{
+            margin-top: -285px;
+            margin-right: 40px;
+        }
+        .contact_service_way3{
+            margin-top: -175px;
+            margin-right: 40px;
+        }
+    }
+
+    
+    @media(min-width: 990px) and (max-width: 1100px){
+        .health_related_issues_card1{
+            width: 24%;
+            margin-right: 2.5%;
+            height: 230px;
+        }
+        .health_related_issues_card2{
+            width: 24%;
+            margin-right: 2.5%;
+            height: 230px;
+        }
+        .health_related_issues_card3{
+            width: 24%;
+            margin-right: 2.5%;
+            height: 230px;
+        }
+    }
+    
+    @media(min-width: 850px) and (max-width: 990px){
+        .health_related_issues_card1{
+            width: 24%;
+            margin-right: 2.5%;
+            height: 210px;
+        }
+        .health_related_issues_card2{
+            width: 24%;
+            margin-right: 2.5%;
+            height: 210px;
+        }
+        .health_related_issues_card3{
+            width: 24%;
+            margin-right: 2.5%;
+            height: 210px;
+        }
+    }
+    @media(min-width: 690px) and (max-width: 850px){
+        .health_related_issues_card1{
+            width: 29%;
+            height: 215px;
+        }
+        .health_related_issues_card2{
+            width: 29%;
+            height: 215px;
+        }
+        .health_related_issues_card3{
+            width: 29%;
+            height: 215px;
+        }
+    }
+
+    @media(min-width: 690px) and (max-width: 730px){
+        .health_related_issues_card1_heading1{
+            padding: 0px 4px;
+        }
+        .health_related_issues_card1_heading2{
+            padding: 0px 5.5px;
+        }
+        .health_related_issues_card1_heading3{
+            margin-bottom: 40px;
+        }
+    }
+
+    @media(min-width: 655px) and (max-width: 690px){
+        .health_related_issues_card1{
+            width: 32%;
+            height: 215px;
+        }
+        .health_related_issues_card2{
+            width: 32%;
+            height: 215px;
+        }
+        .health_related_issues_card3{
+            width: 32%;
+            height: 215px;
+        }
+        .health_related_issues_card1_pr1{
+            width: 95%;
+        }
+        .health_related_issues_card1_pr3{
+            width: 87%;
+        }
+    }
+
+
+    @media(min-width: 840px) and (max-width: 990px){    
+        .contact_service_imgin_left{
+            width: 50%;
+            height: 430px;
+        }
+        .contact_service_submit_in{
+            margin-top: 4px;
+            margin-left: 10%;
+            width: 260px;
+            font-size: 15px;
+        }
+        .contact_service_way{
+            margin-top: -410px;
+            margin-right: 5px;
+        }
+        .contact_service_way_img_in{
+            width: 145px;
+            height: 145px;
+        }
+        .contact_service_way_information h3{
+            font-size: 18px;
+            margin-top: -4px;
+            margin-bottom: -3px;
+        }
+        .contact_service_way_information_pr_head{
+            font-size: 15px;
+            width: 325px;
+        }
+        .contact_service_way2{
+            margin-top: -300px;
+            margin-right: 5px;
+        }
+        .contact_service_way_img_in2{
+            width: 145px;
+            height: 145px;
+        }
+        .contact_service_way_information2 h3{
+            font-size: 18px;
+            margin-top: -4px;
+            margin-bottom: -3px;
+        }
+        .contact_service_way_information_pr_head2{
+            font-size: 15px;
+            width: 325px;
+        }
+        
+        .contact_service_way3{
+            margin-top: -180px;
+            margin-right: 5px;
+        }
+        .contact_service_way_img_in3{
+            width: 145px;
+            height: 145px;
+        }
+        .contact_service_way_information3 h3{
+            font-size: 18px;
+            margin-top: -4px;
+            margin-bottom: -3px;
+        }
+        .contact_service_way_information_pr_head3{
+            font-size: 15px;
+            width: 325px;
+        }  
+        .types_of_doctors_and_problems_1{
+            width: 160px;
+            margin: 0px 10px;
+            height: 390px;
+        }
+        .types_of_doctor_img{
+            width: 130px;
+            height: 130px;
+            margin-top: -5px;
+            border: 4px solid white;
+        }
+        .type_of_doctor_feild_name{
+            font-size: 20px;
+        }
+        .doctor_feild_about{
+            font-size: 13px;
+        }
+        .care_inquiry_form{
+            width: 52%;
+            margin-bottom: -40px;
+            font-size: 92%;
+        } 
+    }
+    
+    @media(min-width: 655px) and (max-width: 840px){
+        .care_inquiry_form{
+            width: 57%;
+            margin-bottom: -40px;
+            font-size: 80%;
+            height: 115px;
+        }
+        .care_inquiry_inform{
+            padding: 0px 40px;
+        }
+        .care_inquiry_submit{
+            margin-top: 20px;
+        }  
+    }
+
+    @media(min-width: 730px) and (max-width: 840px){    
+        .contact_service_imgin_left{
+            width: 50%;
+            height: 430px;
+        }
+        .contact_service_submit_in{
+            margin-top: 4px;
+            margin-left: 10%;
+            width: 260px;
+            font-size: 15px;
+        }
+        .contact_service_way{
+            margin-top: -400px;
+            margin-right: 5px;
+        }
+        .contact_service_way_img_in{
+            width: 140px;
+            height: 140px;
+        }
+        .contact_service_way_information h3{
+            font-size: 17px;
+            margin-top: -5px;
+            margin-bottom: -3px;
+        }
+        .contact_service_way_information_pr_head{
+            font-size: 14px;
+            width: 325px;
+        }
+        .contact_service_way2{
+            margin-top: -290px;
+            margin-right: 5px;
+        }
+        .contact_service_way_img_in2{
+            width: 140px;
+            height: 140px;
+        }
+        .contact_service_way_information2 h3{
+            font-size: 16px;
+            margin-top: -5px;
+            margin-bottom: -3px;
+        }
+        .contact_service_way_information_pr_head2{
+            font-size: 14px;
+            width: 325px;
+        }
+        .contact_service_way3{
+            margin-top: -175px;
+            margin-right: 5px;
+        }
+        .contact_service_way_img_in3{
+            width: 140px;
+            height: 140px;
+        }
+        .contact_service_way_information3 h3{
+            font-size: 16px;
+            margin-top: -5px;
+            margin-bottom: -3px;
+        }
+        .contact_service_way_information_pr_head3{
+            font-size: 14px;
+            width: 325px;
+        }
+        .types_of_doctors_and_problems_1{
+            width: 160px;
+            height: 390px;
+        }
+        #types_of_doctors_and_problems1{
+            margin-left: 10px;
+            margin-right: 6px;
+        }
+        #types_of_doctors_and_problems2{
+            margin: 0px 8px;
+        }
+        #types_of_doctors_and_problems3{
+            margin: 0px 8px;
+        }
+        #types_of_doctors_and_problems4{
+            margin-left: 6px;
+            margin-right: 10px;
+        }
+        .types_of_doctor_img{
+            width: 130px;
+            height: 130px;
+            margin-top: -5px;
+            border: 4px solid white;
+        }
+        .type_of_doctor_feild_name{
+            font-size: 20px;
+        }
+        .doctor_feild_about{
+            font-size: 13px;
+        }   
+    }
+
+    @media(min-width: 655px) and (max-width: 730px){
+        .contact_service_imgin_left{
+            width: 49%;
+            height: 430px;
+        }
+        .contact_service_way{
+            margin-right: 14px;
+            margin-top: -400px;
+        }
+        .contact_service_way_img_in{
+            width: 120px;
+            height: 150px;
+        }
+        .contact_service_way_information{
+            margin-left: -40px;
+        }
+        .contact_service_way_information h3{
+            font-size: 16px;
+            margin-top: -4px;
+            margin-bottom: -4px;
+        }
+        .contact_service_way_information_pr_head{
+            font-size: 14px;
+            width: 285px;
+        }
+        .contact_service_way2{
+            margin-right: 14px;
+            margin-top: -300px;
+        }
+        .contact_service_way_img_in2{
+            width: 120px;
+            height: 150px;
+        }
+        .contact_service_way_information2{
+            margin-left: -40px;
+        }
+        .contact_service_way_information2 h3{
+            font-size: 16px;
+            margin-top: -4px;
+            margin-bottom: -4px;
+        }
+        .contact_service_way_information_pr_head2{
+            font-size: 14px;
+            width: 285px;
+        }
+        .contact_service_way3{
+            margin-right: 14px;
+            margin-top: -180px;
+        }
+        .contact_service_way_img_in3{
+            width: 120px;
+            height: 150px;
+        }
+        .contact_service_way_information3{
+            margin-left: -40px;
+        }
+        .contact_service_way_information3 h3{
+            font-size: 16px;
+            margin-top: -4px;
+            margin-bottom: -4px;
+        }
+        .contact_service_way_information_pr_head3{
+            font-size: 14px;
+            width: 285px;
+        }
+    }
+    
+    @media(min-width: 655px) and (max-width: 730px){
+        .contact_service_submit_in{
+            width: 33.5%;
+            margin-left: 10%;
+            font-size: 90%;
+        }
+        .types_of_doctors_and_problems_1{
+            width: 140px;
+            height: 370px;
+            margin: 0px 9px;
+        }
+        .types_of_doctor_img{
+            width: 100px;
+            height: 100px;
+        }
+        .type_of_doctor_feild_name{
+            font-size: 17.5px;
+        }
+        .doctor_feild_about{
+            font-size: 14px;
+        }
+        #types_of_doctors_and_problems1{
+            margin-left: 11px;
+        }
+        #types_of_doctors_and_problems4{
+            margin-right: 11px;
+        }
+    }
+    
+    @media(min-width: 655px) and (max-width: 990px){
+        #search{
+            width: 392px;
+        }
+        .service_name{
+            font-size: 30px;
+        }
+        .service_name_in1{
+            font-size: 17px;
+        }
+        .nav_start_part2{
+            width: 136px;
+            height: 40px;
+            font-size: 10.9px;
+        }
+        #nav_in2_part2{
+            padding-left: 20px;
+        }
+        .nav_in4_part21{
+            padding-left: 48px;
+        }
+        .option1{
+            font-size: 34px;
+        }
+        .par1{
+            padding: 0px 125px;
+        }
+        .par2{
+            padding: 0px 126.9px;
+        }
+        .nav_start1_part2_submit{
+            width: 160px;
+            height: 42px;
+            font-size: 18px;
+        }
+        .health_related_issues_card1{
+            margin-right: 10px;
+        }
+        .health_related_issues_img{
+            width: 50px;
+            height: 50px;
+        }
+        .health_related_issues_card2{
+            margin-left: 14px;
+            margin-right: 14px;
+        }
+        .health_related_issues_card3{
+            margin-left: 10px;
+        }
+        #submit{
+            margin-right: 30px;
+        }
+        #reset{
+            margin-left: 30px;
+        }
+        .end{
+            width: 120px;
+        }
+        .sign_up_for_nwesletter_infor_input{
+            width: 230px;
+        }
+    }
+   
+    @media(min-width: 450px) and (max-width: 655px){
+        .care_inquiry_form{
+            width: 375px;
+            height: 115px;
+        }
+        .care_inquiry_form h2{
+            font-size: 18px;
+            margin: auto;
+            padding: 0px;
+            width: 305px;
+        }
+        .care_inquiry_submit{
+            margin-top: 17px;
+            width: 150px;
+        }
+    }
+
+    @media(min-width: 530px) and (max-width: 655px){
+        #first{
+            width: 75px;
+            font-size: 11px;
+            height: 20px;
+        }
+        .first3 a{
+            height: 20px;
+        }
+        #second{
+            width: 83px;
+            font-size: 11px;
+            height: 20px;
+        }
+        #third{
+            width: 83px;
+            font-size: 11px;
+            height: 20px;
+        }
+        #four{
+            width: 83px;
+            font-size: 11px;
+            height: 20px;
+        }
+        .nav_start_part2{
+            width: 125px;
+            height: 32px;
+        }
+        .nav_haed_part2{
+            margin-left: 56px;
+        }
+        .nav_in_part2{
+            font-size: 10px;
+        }
+        #nav_in1_part2{
+            padding: 0px;
+            padding-right: 15px;
+        }
+        #nav_in2_part2{
+            padding: 0px;
+            padding-left: 19px;
+        }
+        #nav_in3_part2{
+            padding: 0px;
+            padding-left: 38px;
+            padding-right: 26px;
+        }
+        #nav_in4_part2{
+            padding: 0px;
+            padding: 0px 47px;
+        }
+        #nav_in4_part21{
+            padding: 0px;
+            padding-right: 21px;
+            padding-left: 45px;
+        }
+        .health_related_issues_card1{
+            width: 34%;
+            height: 200px;
+            margin-right: 20px;
+        }
+        .health_related_issues_card2{
+            width: 34%;
+            height: 200px;
+            margin-right: 0px;
+            margin-left: 20px;
+        }
+        .health_related_issues_card3{
+            width: 34%;
+            height: 200px;
+            margin-left: 0px;
+        }
+        .nav_start1_part2_option1 h2{
+            font-size: 27px;
+        }
+        .par1{
+            padding: 0px 121px;
+            font-size: 14.5px;
+        }
+        .par2{
+            padding: 0px 121px;
+            font-size: 14.5px;
+        }
+        .contact_service_imgin_left{
+            width: 50%;
+            height: 360px;
+        }
+        
+        .contact_service_way{
+            margin-top: -355px;
+        }
+        .contact_service_way_img_in{
+            width: 95px;
+            height: 160px;
+            margin-right: -11px;
+        }
+        .contact_service_way_information{
+            margin-right: -100px;
+            margin-left: -20px;
+        }
+        .contact_service_way_information h3{
+            font-size: 14px;
+        }
+        .contact_service_way_information_pr_head{
+            font-size: 12px;
+            width: 222px;
+            margin-top: -4px;
+        }
+
+        .contact_service_way2{
+            margin-top: -265px;
+        }
+        .contact_service_way_img_in2{
+            width: 95px;
+            height: 160px;
+            margin-right: -11px;
+        }
+        .contact_service_way_information2{
+            margin-right: -100px;
+            margin-left: -20px;
+        }
+        .contact_service_way_information2 h3{
+            font-size: 14px;
+        }
+        .contact_service_way_information_pr_head2{
+            font-size: 12px;
+            width: 222px;
+            margin-top: -4px;
+        }
+
+        .contact_service_way3{
+            margin-top: -167px;
+        }
+        .contact_service_way_img_in3{
+            width: 95px;
+            height: 160px;
+            margin-right: -11px;
+        }
+        .contact_service_way_information3{
+            margin-right: -100px;
+            margin-left: -20px;
+        }
+        .contact_service_way_information3 h3{
+            font-size: 14px;
+        }
+        .contact_service_way_information_pr_head3{
+            font-size: 12px;
+            width: 222px;
+            margin-top: -4px;
+        }
+
+        .contact_service_submit_in{
+            width: 33.5%;
+            margin-left: 10%;
+            font-size: 75%;
+            height: 35px;
+        }
+        .types_of_doctors_and_problems_1{
+            width: 22%;
+            height: 330px;
+            margin: 0px 5px;
+        }
+        .types_of_doctor_img{
+            width: 80%;
+            height: 32%;
+            margin-top: -9px;
+        }
+        .type_of_doctor_feild_name{
+            font-size: 15px;
+        }
+        .doctor_feild_about{
+            font-size: 12px;
+        }
+        .doctor_feild_about_more{
+            width: 90px;
+            height: 25px;
+            font-size: 12px;
+            margin-top: 26%;
+        }
+        .sign_up_for_nwesletter_infor_input{
+            width: 35%;
+        }
+        .care_inquiry_form h2{
+            font-size: 15px;
+        }
+        .care_inquiry_form{
+            width: 318px;
+            height: 95px;
+        }
+        .sign_up_for_nwesletter_backimg{
+            margin-top: 110px;
+            height: 348px;
+        }
+    }
+    @media (max-width: 655px) {
+        .signin{
+            margin-right: 5px;
+        }
+        .imgin2{
+            margin-right: 10px;
+        }
+    }
+
+    @media(min-width: 450px) and (max-width: 655px){
+        #search{
+            width: 390px;
+            height: 25px;
+        }
+        .search_submit{
+            height: 19px;
+            width: 60px;
+            margin-left: -65px;
+        }
+        .option1{
+            font-size: 32px;
+        }
+        .service_name{
+            font-size: 28px;
+        }
+        .service_name_in1{
+            font-size: 15px;
+        }
+        .doctor_img1{
+            width: 240px;
+            height: 240px;
+        }
+        .nav_start1_part2_submit{
+            width: 150px;
+            height: 35px;
+        }
+        .head img{
+            width: 40px;
+            height: 40px;
+        }
+        .health_related_issues_img{
+            width: 50px;
+            height: 58px;
+        }
+        .health_related_issues_card1_heading1{
+            font-size: 14.4px;
+            padding: 0px 2px;
+        }
+        .health_related_issues_card1_heading2{
+            font-size: 14.4px;
+            padding: 0px 2px;
+        }
+        .health_related_issues_card1_heading3{
+            font-size: 14.4px;
+        }
+        .health_related_issues_card1_pr1{
+            font-size: 12px;
+        }
+        .health_related_issues_card1_pr2{
+            font-size: 12px;
+        }
+        .health_related_issues_card1_pr3{
+            font-size: 12px;
+        }
+        .appoinment_page_heading{
+            margin-bottom: 35px;
+        }
+        .appoinment_details{
+            height: 26px;
+        }
+        #appoinment_last_terms{
+            margin: auto;    
+        }
+        #submit{
+            width: 90px;
+            height: 26px;
+            margin-right: 20px;
+        }
+        #reset{
+            width: 90px;
+            height: 26px;
+            margin-left: 20px;
+        }
+    }
+
+    @media (min-width: 400px) and (max-width: 655px){
+        .par1{
+            padding: 0px 25px;
+        }
+        .par2{
+            font-size: 14px;
+            padding: 0px 25px;
+        }
+    }
+    @media (max-width: 530px) {
+        .signin{
+            width: 50px;
+        }
+    }
+
+    @media (min-width: 465px) and (max-width: 530px){
+        .contact_service_imgin_left{
+            width: 53%;
+            height: 430px;
+        }
+
+        #nav_start1_part2{
+            width: 108px;
+        }
+        #nav_start2_part2{
+            width: 112px;
+        }
+        .nav_start_part2{
+            width: 120px;
+            height: 32px;
+        }
+        .nav_haed_part2{
+            margin-left: 56px;
+        }
+        .nav_in_part2{
+            width: 80px;
+            font-size: 10px;
+        }
+        #nav_in4_part21{
+            padding-left: 28px;
+        }
+        #nav_in1_part2{
+            padding: 0px 20px;
+        }
+        #nav_in2_part2{
+            padding-left: 29px;
+            padding-right: 0px;
+        }
+        #nav_in3_part2{
+            padding: 0px 41px;
+        }
+        #nav_in4_part2{
+            padding: 0px 44px;
+        }
+        #first{
+            width: 75px;
+            height: 20px;
+            font-size: 10px;
+        }
+        #second{
+            width: 75px;
+            height: 20px;
+            font-size: 10px;
+        }
+        #third{
+            width: 75px;
+            height: 20px;
+            font-size: 10px;
+        }
+        #four{
+            width: 78px;
+            height: 20px;
+            font-size: 10px;
+        }
+        .first3 a{
+            height: 20px;
+        }
+        .health_related_issues_card1{
+            width: 36%;
+            height: 197px;
+            margin-right: 20px;
+        }
+        .health_related_issues_card2{
+            width: 36%;
+            height: 197px;
+            margin-right: 0px;
+            margin-left: 26px;
+        }
+        .health_related_issues_card3{
+            width: 36%;
+            height: 197px;
+            margin: 10px auto;
+        }
+        .contact_service_way{
+            margin-top: -400px;
+        }
+        .contact_service_way2{
+            margin-top: -300px;
+        }
+        .contact_service_way3{
+            margin-top: -175px;
+        }
+        .contact_service_way_img_in{
+            width: 95px;
+            height: 160px;
+            margin-right: -12px;
+        }
+        .contact_service_way_information{
+            margin-right: -109px;
+            margin-left: -25px;
+        }
+        .contact_service_way_information h3{
+            font-size: 12px;
+            margin-top: 1px;
+            margin-left: 6px;
+        }
+        .contact_service_way_information_pr_head{
+            font-size: 12.5px;
+            width: 183px;
+            margin-top: -3px;
+            margin-left: 6px;
+        }
+        .contact_service_way_img_in2{
+            width: 95px;
+            height: 160px;
+            margin-right: -12px;
+        }
+        .contact_service_way_information2{
+            margin-right: -109px;
+            margin-left: -25px;
+        }
+        .contact_service_way_information2 h3{
+            font-size: 12px;
+            margin-top: 1px;
+            margin-left: 6px;
+        }
+        .contact_service_way_information_pr_head2{
+            font-size: 12.5px;
+            width: 183px;
+            margin-top: -3px;
+            margin-left: 6px;
+        }
+
+        .contact_service_way_img_in3{
+            width: 95px;
+            height: 160px;
+            margin-right: -12px;
+        }
+        .contact_service_way_information3{
+            margin-right: -109px;
+            margin-left: -25px;
+        }
+        .contact_service_way_information3 h3{
+            font-size: 12px;
+            margin-top: 1px;
+            margin-left: 6px;
+        }
+        .contact_service_way_information_pr_head3{
+            font-size: 12.5px;
+            width: 183px;
+            margin-top: -3px;
+            margin-left: 6px;
+        }
+        .contact_service_submit_in{
+            width: 185px;
+            font-size: 12px;
+            height: 32px;
+            margin-left: 10%;
+        }        
+        .type_of_doctor_feild_name{
+            font-size: 20px;
+        }
+        .types_of_doctors_and_problems_1{
+            height: 350px;
+        }
+        .types_of_doctor_img{
+            width: 80%;
+            height: 40%;
+            margin-top: -7px;
+        }
+    }
+
+    @media (min-width: 400px) and (max-width: 465px){
+        .types_of_doctor_img{
+            width: 80%;
+            height: 35%;
+            margin-top: -7px;
+        }
+
+        #first{
+            width: 70px;
+            height: 20px;
+            font-size: 10px;
+        }
+        #second{
+            width: 73px;
+            height: 20px;
+            font-size: 10px;
+        }
+        #third{
+            width: 65px;
+            height: 20px;
+            font-size: 10px;
+        }
+        #four{
+            width: 78px;
+            height: 20px;
+            font-size: 10px;
+        }
+        .first3 a{
+            height: 20px;
+        }
+
+        #nav_start1_part2{
+            width: 85px;
+        }
+        #nav_start2_part2{
+            width: 109px;
+        }
+        .nav_start_part2{
+            width: 100px;
+            height: 32px;
+        }
+        .nav_haed_part2{
+            margin-left: 56px;
+        }
+        .nav_in_part2{
+            font-size: 10px;
+        }
+        #nav_in1_part2{
+            padding: 0px;
+            padding-right: 10px;
+        }
+        #nav_in2_part2{
+            padding-left: 25px;
+            padding-right: 1px;
+        }
+        #nav_in3_part2{
+            padding: 0px 36px;
+        }
+        #nav_in4_part2{
+            padding: 0px 37px;
+        }
+        #nav_in4_part21{
+            padding-left: 34px;
+        }
+        
+        .doctor_img1{
+            width: 230px;
+            height: 230px;
+        }
+
+        .option1{
+            font-size: 22px;
+        }
+
+        .par1{
+            font-size: 13px;
+        }
+        .par2{
+            font-size: 13px;
+        }
+        .nav_start1_part2_submit{
+            width: 165px;
+            height: 38px;
+        }
+
+        .health_related_issues_card1{
+            width: 40%;
+            height: 196px;
+            margin-right: 20px;
+        }
+        .health_related_issues_img{
+            width: 50px;
+            height: 58px;
+        }
+        .health_related_issues_card1_heading1{
+            font-size: 14.4px;
+            padding: 0px 2px;
+        }
+        .health_related_issues_card1_pr1{
+            font-size: 12px;
+        }
+        .health_related_issues_card2{
+            width: 40%;
+            height: 196px;
+            margin-right: 0px;
+            margin-left: 20px;
+        }
+        .health_related_issues_card1_heading2{
+            font-size: 14.4px;
+            padding: 0px 2px;
+        }
+        .health_related_issues_card1_pr2{
+            font-size: 12px;
+        }
+        .health_related_issues_card3{
+            width: 40%;
+            height: 196px;
+            margin: 10px auto;
+        }
+        .health_related_issues_card1_heading3{
+            font-size: 14.4px;
+            padding: 0px 2px;
+        }
+        .health_related_issues_card1_pr3{
+            font-size: 12px;
+        }
+
+        .contact_service_imgin_left{
+            width: 220px;
+            margin-left: -10px;
+            height: 380px;
+        }
+        .contact_service_way_img{
+            margin-left: 180px;
+        }
+        .contact_service_way{
+            margin-top: -380px;
+        }
+        .contact_service_way_information{
+            margin-top: -116px;
+            margin-right: -109px;
+            margin-left: 238px;
+        }
+        .contact_service_way_img_in{
+            width: 95px;
+            height: 160px;
+        }
+        .contact_service_way_information h3{
+            font-size: 13px;
+            margin-top: 1px;
+            margin-left: 6px;
+        }
+        .contact_service_way_information_pr_head{
+            font-size: 12.5px;
+            width: 99%;
+            margin-top: -3px;
+            margin-left: 6px;
+        }
+        .contact_service_way_img2{
+            margin-left: 180px;
+        }
+        .contact_service_way2{
+            margin-top: -285px;
+        }
+        .contact_service_way_information2{
+            margin-top: -116px;
+            margin-right: -109px;
+            margin-left: 238px;
+        }
+        .contact_service_way_img_in2{
+            width: 95px;
+            height: 160px;
+        }
+        .contact_service_way_information2 h3{
+            font-size: 13px;
+            margin-top: 1px;
+            margin-left: 6px;
+        }
+        .contact_service_way_information_pr_head2{
+            font-size: 12.5px;
+            width: 99%;
+            margin-top: -3px;
+            margin-left: 6px;
+        }
+        .contact_service_way3{
+            margin-top: -170px;
+        }
+        .contact_service_way_img3{
+            margin-left: 180px;
+        }
+        .contact_service_way_information3{
+            margin-top: -116px;
+            margin-right: -109px;
+            margin-left: 238px;
+        }
+        .contact_service_way_img_in3{
+            width: 95px;
+            height: 160px;
+        }
+        .contact_service_way_information3 h3{
+            font-size: 13px;
+            margin-top: 1px;
+            margin-left: 6px;
+        }
+        .contact_service_way_information_pr_head3{
+            font-size: 12.5px;
+            width: 99%;
+            margin-top: -3px;
+            margin-left: 6px;
+        }
+        .contact_service_submit_in{
+            width: 175px;
+            font-size: 12px;
+            height: 32px;
+            margin-left: 5%;
+        }
+        .type_of_doctor_feild_name{
+            font-size: 16.5px;
+        }
+        .types_of_doctors_and_problems_1{
+            height: 315px;
+        }
+    }
+
+    @media (min-width: 400px) and (max-width: 530px){
+        .care_inquiry_form {
+            width: 78%;
+            height: 93px;
+        }
+        .care_inquiry_form h2 {
+            font-size: 15px;
+            padding: 0px 33px;
+        }
+        .care_inquiry_submit {
+            margin-top: 17px;
+            width: 155px;
+        }
+        .types_of_doctors_and_problems_1{
+            width: 35%;
+            margin-bottom: 12px;
+        }
+        .doctor_feild_about{
+            font-size: 12px;
+        }
+        .doctor_feild_about_more{
+            margin-top: 24%;
+        }
+        .appoinment_page_heading {
+            margin-top: 60px;
+        }
+        .appoinment_details{
+            width: 65%;
+        }
+        #submit{
+            margin-right: 0px;
+        }
+        .end{
+            width: 28%;
+        }
+        .sign_up_for_nwesletter_backimg {
+            margin-top: 110px;
+            height: 348px;
+        }
+    }
+
+    @media (min-width: 400px) and (max-width: 520px){
+        #sign_up_for_nwesletter_infor_name {
+            margin-right: 0px;
+        }
+        .sign_up_for_nwesletter_infor_input {
+            width: 40%;
+            margin-bottom: 50px;
+        }
+        .sign_up_for_nwesletter_backimg {
+            margin-top: 110px;
+            height: 380px;
+        }
+        .sign_up_for_nwesletter_infor h2 {
+            margin-top: 50px;    
+            width: 80%;
+            margin-bottom: 30px;
+        }
+    }
+
+    @media (min-width: 280px) and (max-width: 500px){
+        .flow1{
+            height: 260px;
+        }
+        .img1{
+            height: 260px;
+        }
+        .flow2{
+            margin-top: -232px;
+            height: 200px;
+        }
+        .img2{
+            height: 200px;
+        }
+        .flow3{
+            margin-top: -200px;
+            height: 200px;
+        }
+        .img3{
+            height: 200px;
+        }
+    }
+
+    @media(max-width: 530px){
+        #search{
+            display: none;
+        }
+        .search_submit{
+            display: none;
+        }
+    }
+
+    @media (min-width: 290px) and (max-width: 400px){
+        .top{                     
+            height: 42px;
+        }
+        .img .imgin1{
+            width: 94px;
+        }
+        .sign_icon .imgin2{
+            width: 18px;
+        }
+        #first{
+            width: 60px;
+            font-size: 10.5px;
+            height: 17px;
+        }
+        #second{
+            width: 70px;
+            font-size: 10px;
+            height: 17px;
+        }
+        #third{
+            width: 65px;
+            font-size: 10px;
+            height: 17px;
+        }
+        #four{
+            width: 77px;
+            font-size: 10px;
+            height: 17px;
+        }
+        .first3 a{
+            height: 17px;
+        }
+        .flow1{
+            width: 100%;
+            height: 200px;
+            margin-top: 60px;
+        }
+        .img1{
+            height: 200px;
+        }
+        .flow2{
+            display: none;
+        }
+        .flow3{
+            display: none;
+        }
+        .point_over{
+            margin-top: -30px;
+        }
+        .service_name{
+            font-size: 27px;
+        }
+        .service_name_in1{
+            font-size: 16.5px;
+        }
+        .nav_haed_part2{
+            margin-left: 44px;
+        }
+        #nav_start1_part2{
+            width: 68px;
+            height: 30px;
+            padding-left: 15px;
+        }
+        #nav_in1_part2{
+            font-size: 9px;
+            padding: 0px;
+            padding-right: 5px;
+        }
+        #nav_start2_part2{
+            width: 97px;
+            height: 30px;
+        }
+        #nav_in2_part2{
+            font-size: 9px;
+            padding: 0px;
+            padding-left: 23px;
+        }
+        #nav_start3_part2{
+            width: 85px;
+            height: 30px;
+        }
+        #nav_in3_part2{
+            font-size: 10px;
+            padding: 0px;
+            padding-left: 21px;
+        }
+        #nav_start4_part2{
+            width: 85px;
+            height: 30px;
+        }
+        #nav_in4_part2{
+            font-size: 9px;
+            padding: 0px;
+            padding-left: 32px;
+        }
+        #nav_in4_part21{
+            font-size: 9px;
+            padding: 0px;
+            padding-left: 29px;
+        }
+        .doctor_img1{
+            width: 240px;
+            height: 240px;
+        }
+        .option1{
+            font-size: 23px;
+        }
+        .par1{
+            font-size: 14px;
+            padding: 0px 20px;
+        }
+        .par2{
+            font-size: 14px;
+            padding: 0px 20px;
+        }
+        .nav_start1_part2_submit{
+            width: 145px;
+            font-size: 17px;
+            height: 36px;
+            margin-top: 35px;
+        }
+        .health_related_issues{
+            display: block;
+            margin-top: 60px;
+        }
+        .health_related_issues_card1{
+            width: 195px;
+            height: 200px;
+            margin: auto;
+            margin-bottom: 40px;
+        }
+        .health_related_issues_img{
+            width: 65px;
+            height: 70px;
+        }
+        .health_related_issues_card1_heading1{
+            font-size: 15px;
+            margin-bottom: 18px;
+        }
+        .health_related_issues_card1_pr1{
+            font-size: 13px;
+        }
+        .health_related_issues_card2{
+            width: 195px;
+            height: 200px;
+            margin: auto;
+            margin-bottom: 40px;
+        }
+        .health_related_issues_card1_heading2{
+            font-size: 15px;
+            margin-bottom: 18px;
+        }
+        .health_related_issues_card1_pr2{
+            font-size: 13px;
+        }
+        .health_related_issues_card3{
+            width: 195px;
+            height: 200px;
+            margin: auto;
+            margin-bottom: 40px;
+        }
+        .health_related_issues_card1_heading3{
+            font-size: 15px;
+            margin-bottom: 18px;
+        }
+        .health_related_issues_card1_pr3{
+            font-size: 13px;
+        }
+        .contact_service_img_left{
+            text-align: center;
+        }
+        .contact_service_imgin_left{
+            width: 290px;
+            height: 280px;
+        }
+        
+        .contact_service_way{
+            margin-top: 24px;
+            float: none;
+        }
+        .contact_service_way_img_in{
+            width: 100px;
+            margin-top: -52px;
+            margin-left: -30px;
+        }
+        .contact_service_way_information{
+            margin-top: -132px;
+            margin-left: 36px;
+        }
+        .contact_service_way_information h3{
+            font-size: 16px;
+            margin-bottom: -4px;
+        }
+        .contact_service_way_information_pr_head{
+            width: 280px;
+        }
+        .contact_service_way_information_pr_head h5{
+            font-size: 12px;
+        }
+
+        .contact_service_way2{
+            margin-top: -42px;
+            float: none;
+        }
+        .contact_service_way_img_in2{
+            width: 100px;
+            margin-top: -52px;
+            margin-left: -30px;
+        }
+        .contact_service_way_information2{
+            margin-top: -132px;
+            margin-left: 36px;
+        }
+        .contact_service_way_information2 h3{
+            font-size: 16px;
+            margin-bottom: -4px;
+        }
+        .contact_service_way_information_pr_head2{
+            width: 280px;
+        }
+        .contact_service_way_information_pr_head2 h5{
+            font-size: 12px;
+        }
+
+        .contact_service_way3{
+            margin-top: -30px;
+            float: none;
+        }
+        .contact_service_way_img_in3{
+            width: 100px;
+            margin-top: -52px;
+            margin-left: -30px;
+        }
+        .contact_service_way_information3{
+            margin-top: -132px;
+            margin-left: 36px;
+        }
+        .contact_service_way_information3 h3{
+            font-size: 16px;
+            margin-bottom: -4px;
+        }
+        .contact_service_way_information_pr_head3{
+            width: 280px;
+        }
+        .contact_service_way_information_pr_head3 h5{
+            font-size: 12px;
+        }
+        .contact_service_submit{
+            margin-top: -20px;
+        }
+        .types_of_doctors_and_problems_1{
+            height: 340px;
+            width: 160px;
+            margin-bottom: 20px;
+        }
+        .types_of_doctor_img{
+            width: 80%;
+            height: 38%;
+        }
+        .type_of_doctor_feild_name{
+            font-size: 20px;
+        }
+        .doctor_feild_about{
+            font-size: 14px;
+        }
+        .doctor_feild_about_more{
+            margin-top: 26px;
+        }
+        .appoinment_page_heading{
+            font-size: 22px;
+            margin-bottom: 40px;
+        }
+        .head{
+            margin-right: 0px;
+        }
+        .head img{
+            height: 40px;
+            width: 40px;
+        }
+        .end{
+            width: 32%;
+            height: 26px;
+        }
+        #submit{
+            margin-right: 20px;
+        }
+        #reset{
+            margin-left: 20px;
+        }
+        .appoinment_details{
+            width: 60%;
+            height: 28px;
+        }
+        
+        .contact_service_submit_in{
+            width: 200px;
+            height: 35px;
+            font-size: 13px;
+        }
+        .care_inquiry_form{
+            width: 88%;
+            height: 95px;
+        }
+        .care_inquiry_inform{
+            font-size: 16px;
+        }
+        .care_inquiry_submit{
+            font-size: 12px;
+            width: 45%;
+            height: 26px;
+            margin-top: 7px;
+        }
+        .sign_up_for_nwesletter_infor_input{
+            width: 130px;
+            margin-bottom: 50px;
+        }
+        #sign_up_for_nwesletter_infor_name{
+            margin-right: 10px;
+        }
+    }
+
+    @media (min-width: 340px) and (max-width: 400px) {
+        .care_inquiry_form{
+            width: 300px;
+            height: 95px;
+        }
+    }
+
+    @media (min-width: 330px) and (max-width: 400px) {
+        .par1{
+            font-size: 14px;
+            padding: 0px 28px;
+        }
+        .par2{
+            font-size: 14px;
+            padding: 0px 28px;
+        }
+    }
+
+    @media (min-width: 350px) and (max-width: 400px) {
+        .option1{
+            font-size: 26px;
+        }
+    }
+
+    @media (min-width: 290px) and (max-width: 320px) {
+        .contact_service_way_information_pr_head{
+            width: 250px;
+        }
+        .contact_service_way_information_pr_head2{
+            width: 250px;
+        }
+        .contact_service_way_information_pr_head3{
+            width: 250px;
+        }
+        .care_inquiry_form h2{
+            padding: 0px 30px;
+        }
+        .care_inquiry_submit{
+            font-size: 10.5px;
+            width: 45%;
+            height: 26px;
+            margin-top: 7px;
+        }
+        #sign_up_for_nwesletter_infor_name{
+            margin-right: 0px;
+            margin-bottom: 15px;
+        }
+        #sign_up_for_nwesletter_infor_email{
+            margin-left: 0px;
+            margin-bottom: 65px;
+        }
+    }
+
+    @media (max-width: 530px) {
+        #serach{
+            display: none;
+        }
+        .toggleT{
+            display: block;
+        }
+    }
+
+    @media (min-width: 290px) and (max-width: 400px) {
+        #add{
+            margin-top: -27px;
+            /* margin-right: 18px; */
+        }
+        #wrong{
+            margin-bottom: 0px;
+            margin-top: -24px;
+            margin-left: 0px;
+            margin-right: 50px;
+        }
+        .search_bar.open{
+            margin-right: 0px;
+        }
+    }
+
+    @media(min-width: 950px){
+        .follow{
+            font-size: 20px;
+        }
+        .follow_head{
+            font-size: 20px;
+            margin-top: -210px;
+            margin-left: 64%;
+        }
+        .follow a{
+            margin-top: -400px;
+        }
+        .follow #link{
+            margin-left: 64%;
+        }
+        .follow_link{
+            width: 50px;
+        }
+    }
+    
+    @media(min-width: 700px) and (max-width: 950px){
+        .follow{
+            margin-left: 42%;
+        }
+        
+    }
+
+    @media(min-width: 600px) and (max-width: 700px){
+        .follow{
+            margin-left: 37%;
+        }
+        .follow #link{
+            margin-left: 37%;
+        }
+        
+    }
+    
+    @media(min-width: 600px) and (max-width: 950px){
+        .sign_up_for_nwesletter_infor h2{
+            margin-left: 4%;
+            font-size: 20px;
+            width: 47%;
+        }
+        .sign_up_for_nwesletter_infor_fill{
+            margin-left: 4%;
+        }
+        .sign_up_for_nwesletter_infor_input{
+            height: 32px;
+        }
+        .sign_up_for_nwesletter_infor_submit_button input{
+            width: 125px;
+            height: 30px;
+        }
+        .follow{
+            font-size: 20px;
+            margin-top: -210px;
+        }
+        .follow #link{
+            position: relative;
+            float: right;
+            margin-right: 19%;
+        }
+        .follow_head{
+            position: relative;
+            float: right;
+            margin-top: 30px;
+            font-size: 14px;
+            width: 230px;
+            margin-right: 10%;
+        }
+        .follow a{
+            margin-top: -400px;
+        }
+        #follow_link1{
+            width: 30px;
+        }
+        #follow_link2{
+            width: 40px;
+        }
+        #follow_link3{
+            width: 27px;
+        }
+        #follow_link4{
+            width: 67px;
+        }
+    }
+    
+    @media(min-width: 470px) and (max-width: 600px){
+        .sign_up_for_nwesletter_infor h2{
+            margin-left: 4%;
+            font-size: 20px;
+            width: 47%;
+        }
+        .sign_up_for_nwesletter_infor_fill{
+            margin-left: 4%;
+        }
+        .sign_up_for_nwesletter_infor_input{
+            height: 32px;
+        }
+        .sign_up_for_nwesletter_infor_submit_button input{
+            width: 125px;
+            height: 30px;
+        }
+        .follow{
+            margin-top: -188px;
+            margin-left: 37%;
+        }
+        .follow a{
+            margin-top: -400px;
+        }
+        .follow_link{
+            width: 35px;
+        }
+    }
+
+    @media(min-width: 540px) and (max-width: 600px){
+        .follow_head{
+            position: relative;
+            float: right;
+            margin-top: 30px;
+            font-size: 14px;
+            width: 230px;
+            margin-right: 3%;
+        }
+        .follow{
+            margin-left: 34%;
+        }
+        .follow #link{
+            position: relative;
+            float: right;
+            margin-right: 18%;
+        }
+        .follow_link {
+            width: 35px;
+        }
+    }
+
+    @media(min-width: 520px) and (max-width: 540px) {
+        .sign_up_for_nwesletter_infor {
+            margin-top: -320px;
+        }
+        .sign_up_for_nwesletter_infor h2{
+            width: 80%;
+            font-size: 20px;
+        }  
+    }
+
+    @media(max-width: 520px) {
+        .sign_up_for_nwesletter_infor {
+            margin-top: -405px;
+        }
+        .sign_up_for_nwesletter_infor_fill {
+            margin-left: 4%;
+            width: 95%;
+        } 
+    }
+
+    @media(min-width: 340px) and (max-width: 520px) {
+        .sign_up_for_nwesletter_infor h2{
+            width: 80%;
+            font-size: 20px;
+        } 
+    }
+
+    @media(max-width: 340px) {
+        .follow_head{
+            width: 90%;
+            margin-top: -24px;
+        }
+        .sign_up_for_nwesletter_infor h2{
+            width: 95%;
+            font-size: 19px;
+        }
+    }
+
+    @media(max-width: 400px) {
+        .sign_up_for_nwesletter_infor {
+            margin-top: -354px;
+        }
+        .sign_up_for_nwesletter_infor_fill {
+            margin-bottom: 34px;
+        }     
+    }
+    
+    @media(max-width: 540px){
+        .follow_link {
+            width: 35px;
+        }
+        .sign_up_for_nwesletter_infor h2{
+            margin-left: 4%;
+            margin-bottom: 25px;
+        }
+        .sign_up_for_nwesletter_infor_fill div{
+            margin-bottom: 15px;
+            height: 32px;
+        }
+        .follow{
+            margin-top: 60px;
+            margin-left: 4%;
+        }
+        .sign_up_for_nwesletter_infor_input {
+            height: 26px;
+        }
+        .sign_up_for_nwesletter_infor_submit_button input {
+            width: 125px;
+            height: 30px;
+        }
+    }
+     
